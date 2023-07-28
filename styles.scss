@@ -1,3 +1,5 @@
+$primary: #000;
+
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
 
 .logo-img {
@@ -26,7 +28,7 @@
         height: 90vh;
         display: grid;
         grid-template-columns: 1fr;
-        gap: 30vh
+        gap: 20vh;
     }
 }
 
@@ -111,7 +113,7 @@
                 color: $white;
         }
         .btn-input{
-            margin-left: 57vw;
+            margin-left: 70%;
             margin-bottom: 5vh;
             margin-top: 5vh;
         }
@@ -121,10 +123,16 @@
 .footer-info{
     background-color: $dark;
     color: $white;
+    width: 100%;
     .container-info{
-        height: 90vh;
-        border: 1px solid $white;
+        height: 100vh;
+        width: 100%;
+        margin: 0;
+        border-bottom: 1px solid $white;
     }
+        .col-6 {
+            padding: 5vw;
+        }
         .col-aside{
             display:flex;
             flex-direction: column;
@@ -132,6 +140,7 @@
             height: 25vh;
             align-items: flex-end;
             justify-content: center;
+            padding: 5vw;
             h4{
                 margin: 0;
             }
@@ -205,6 +214,168 @@
         svg{
             margin: 0 3vw;
             color: $white;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .main-info{
+        .container-fluid {
+            height: 100vh;
+            gap: 10vh;
+        }
+    }
+    .footer-info{
+        .container-info{
+            height: 50vh;
+            .col-custom{
+                margin-top: 0;            
+            }
+        }
+
+}
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px)  {
+    .info-container {
+        height: 90%;
+        .stairs-img {
+            height: 90%;
+            object-fit: cover;
+        }
+        h2 {
+            font-size: 14vw;
+    }}
+    .main-info{
+        .container-fluid {
+            height: 100vh;
+            gap: 0;
+            bottom: 0;
+        }
+    }
+    .footer-info{
+        .container-info{
+            height: 50vh;
+            .col-custom{
+                margin-top: 0;            
+            }
+        }
+}
+}
+
+@media (min-width: 1200px) and (max-width: 1399px)  {
+    .info-container {
+        height: 80%;
+        .stairs-img {
+            height: 90%;
+            object-fit: cover;
+        }
+        h2 {
+            font-size: 14vw;
+    }}
+    .main-info{
+        .container-fluid {
+            height: 110vh;
+            gap: 0;
+            bottom: 0;
+        }
+    }
+    .footer-info{
+        .container-info{
+            height: 50vh;
+            .col-custom{
+                margin-top: 0;            
+            }
+        }
+}
+}
+
+@media (min-width: 1400px) {
+    .logo-img {
+        width: 10vw; 
+        margin-left: 0;
+    }
+    
+    .navbar-nav{
+        height: 100%;
+        width: 100%;
+        justify-content: space-between;
+        .nav-item{
+            margin-left: 2vh;
+        }
+        .nav-link{
+            color: $white;
+            font-size: 1rem;
+            font-weight: 400;
+        }
+    }
+    .info-container {
+        height: 80vh;
+        .stairs-img {
+            height: 90%;
+            object-fit: cover;
+        }
+        h2 {
+            font-size: 5vw;
+            transform: translate(-0%, -50%);
+            position: absolute;
+            left: 70%;
+    }}
+    .main-info{
+        .container-fluid {
+            height: 120vh;
+            gap: 0;
+            bottom: 0;
+        }
+    }
+    .footer-info{
+        .container-info{
+            height: 50vh;
+            .col-custom{
+                margin-top: 0;            
+            }
+        }
+    }
+.footer-container{
+    height: 20vh;
+    margin: 5vh;
+        .col-polities{
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            align-items: center;
+            margin: 0;
+            .h5-one{
+                width: 100%;
+                text-align: start;
+            }
+            .h5-two{
+                width: 100%;
+                text-align: start;
+    
+            }
+            .h5-three{
+                width: 100%;
+                text-align: center;
+                margin:0;
+            }
+            .h5-four{
+                width: 100%;
+                text-align: center;
+                margin:0;
+            }
+        }
+        .social-media{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 10vh;
+            svg{
+                margin: 0 1vw;
+                color: $white;
+                height: 3vh;
+                width: 3vh;
+            }
         }
     }
 }
