@@ -12225,7 +12225,7 @@ textarea.form-control-lg {
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
   .info-container {
-    height: 80%;
+    height: 70vh;
   }
   .info-container .stairs-img {
     height: 90%;
